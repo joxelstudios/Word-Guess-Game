@@ -1,0 +1,56 @@
+header {
+    height: 150px;
+    border: 1px solid aliceblue;
+    width: 600px;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px  auto;
+    padding-bottom: 100px;
+    color: aliceblue;
+    background-image: url(../images/wallpaper.jpg);
+  
+}
+body {
+    background-color: #272b30;
+    background-image: url(../images/scifi-halo-nightfall-2048x1152.jpg);
+
+}
+.underscore {
+    height: 150px;
+    border: 1px solid aliceblue;
+    width: 600px;
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    color: aliceblue
+  
+}
+.rightGuess {
+    height: 150px;
+    border: 1px solid aliceblue;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    color: aliceblue
+}
+.wrongGuess {
+    height: 150px;
+    border: 1px solid aliceblue;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    color: aliceblue
+  
+}
+.guessesLeft {
+    height: 80px;
+    border: 1px solid aliceblue;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    color: aliceblue
+  
+}
