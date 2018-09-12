@@ -1,6 +1,16 @@
  // CREATE ARRAY OF WORDS
+ function loadscreen() {
+     var loadDiv = document.getElementById("loadScreen");
+
+     show = function () {
+         loadDiv.style.display = "block";
+         setTimeout(hide, 5000); // 5 seconds
+     }
+ }
+
+
  // I LEARNED THAT 'CONST' IS A WAR TO CREATE AN VARIABLE OR ARRAY THAT DOESNT CHANGE
- const word = ["halo", "oracle", "chief"]
+ const word = ["oracle", "master chief", "arbiter"]
 
  // CHOOSING A RANDOM WORD FROM THE ARRAY BY USING RANDOM NUMBER GENERATOR BASED ON THE
  // NUMBER OF INDEXES IN THE WORD ARRAY.
@@ -20,7 +30,7 @@
  let wrongGuessDisplay = document.getElementsByClassName("wrongGuess");
 
  let guessesLeftDisplay = document.getElementById("guessesLeftText");
- 
+
  let guessesLeft = 10;
 
 
@@ -59,7 +69,12 @@
          console.log(rightLetter);
 
          //  REPLACE UNDERSCORE TEXT WITH LETTER
-         underScore[chosenWord.indexOf(userGuess)] = userGuess;
+         for  (var i= 0; i < chosenWord.length; i++ ){
+             if (chosenWord[i] === userGuess){
+                underScore[i] = userGuess;
+             }
+         }
+         
          console.log(underScore)
          underScoreDisplay[0].innerHTML = underScore.join(" ");
          // ADD THE LETTER TO THE RIGHT GUESS SECTION IN HTML
@@ -74,14 +89,14 @@
          wrongLetter.push(userGuess);
          console.log(wrongLetter);
          wrongGuessDisplay[0].innerHTML = wrongLetter;
-         guessesLeft --;
-         guessesLeftDisplay.textContent= guessesLeft;
-         if (guessesLeft === 0 ){
+         guessesLeft--;
+         guessesLeftDisplay.textContent = guessesLeft;
+         if (guessesLeft === 0) {
              alert("Game Over!");
          }
 
-         
-         
+
+
      }
 
  })
