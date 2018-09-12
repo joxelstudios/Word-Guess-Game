@@ -13,26 +13,36 @@
 </head>
 
 <body>
-    <div id="loadScreen">
-        <img src="assets/images/halo-loading-screen.gif" alt="load-screen">
-    </div>
+    
     <header>
         <!-- DISPLAY GAME NAME    -->
         <h1>Hangman Game</h1>
         <br>
         <h2>Game Theme:</h2>
-        
+
     </header>
+    <div class="" id="loadScreen">
+        <img src="assets/images/halo-loading-screen.gif" alt="load-screen" width="50%">
+    </div>
     <br>
 
     <!-- UNDERSCORES -->
-    <div class="underscore">_ _ _ _ _</div>
-    <br>
-    <div class="rightGuess">Correct Guess:</div>
-    <br>
-    <div class="wrongGuess">Incorrect Guess:</div>
-    <div class="guessesLeft"><h2>Guesses Left: <span id="guessesLeftText"></span></h2></div>
+    <div class="container">
+        <div class="hidden" id="Container">
+            <div class="underscore">_ _ _ _ _</div>
+            <br>
+            <div class="rightGuess">Correct Guess:</div>
+            <br>
+            <div class="wrongGuess">Incorrect Guess:</div>
+            <div class="guessesLeft">
+                <h2>Guesses Left: <span id="guessesLeftText"></span></h2>
+            </div>
 
+
+        </div>
+
+
+    </div>
     <script src="assets/javascript/game.js"></script>
 </body>
 

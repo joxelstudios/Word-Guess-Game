@@ -1,12 +1,10 @@
  // CREATE ARRAY OF WORDS
- function loadscreen() {
-     var loadDiv = document.getElementById("loadScreen");
-
-     show = function () {
-         loadDiv.style.display = "block";
-         setTimeout(hide, 5000); // 5 seconds
-     }
+function loadScreen() {
+     document.getElementById("loadScreen").className = "hidden";
+     document.getElementById("Container").className= "";
+         
  }
+window.setTimeout(loadScreen, 4500);
 
 
  // I LEARNED THAT 'CONST' IS A WAR TO CREATE AN VARIABLE OR ARRAY THAT DOESNT CHANGE
@@ -18,6 +16,8 @@
  // ONLY USED IT TO PRACTICE WITH IT. ALL 'LET'S CAN BE REPLACED BY VAR IN THIS PROJECT.
  let randNum = Math.floor(Math.random() * word.length);
  let chosenWord = word[randNum];
+
+
  // CREATE ARRAYS FOR RIGHT AND WRONG GUESSES, TO BE DISPLAYED LATER.
  let rightLetter = [];
  let wrongLetter = [];
