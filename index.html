@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <!-- DISPLAY GAME NAME    -->
         <h1>Hangman Game</h1>
@@ -36,6 +36,10 @@
             <div class="wrongGuess">Incorrect Guess:</div>
             <div class="guessesLeft">
                 <h2>Guesses Left: <span id="guessesLeftText"></span></h2>
+                <br>
+                <audio class="bg-music" id="bg-music" controls preload="none">
+                    <source src="assets/audio/Halo.mp3" type="audio/mpeg">
+                </audio>
             </div>
 
 
@@ -43,6 +47,8 @@
 
 
     </div>
+
+
     <script src="assets/javascript/game.js"></script>
 </body>
 
