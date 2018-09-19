@@ -18,7 +18,7 @@ window.setTimeout(loadScreen, 4500);
  let chosenWord = word[randNum];
 
  //PLAY BACKGROUND MUSIC
- $('#bg-music').autoplay
+ $('#bg-music').autoplay;
 
  // CREATE ARRAYS FOR RIGHT AND WRONG GUESSES, TO BE DISPLAYED LATER.
  let rightLetter = [];
